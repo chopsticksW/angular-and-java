@@ -4,5 +4,32 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/liuwenjian/dao" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/liuwenjian/service" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/images/77876489652904774.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/images/wenhao.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/angular/angular-animate.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/angular/angular-animate.min.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/angular/angular-aria.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/angular/angular-aria.min.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/angular/angular-cookies.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/angular/angular-cookies.min.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/angular/angular-loader.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/angular/angular-loader.min.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/angular/angular-messages.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/angular/angular-messages.min.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/angular/angular-mocks.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/angular/angular-resource.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/angular/angular-resource.min.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/angular/angular-route.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/angular/angular-route.min.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/angular/angular-sanitize.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/angular/angular-sanitize.min.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/angular/angular-scenario.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/angular/angular-touch.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/angular/angular-touch.min.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/angular/angular.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/angular/angular.min.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/angular/i18n/angular-locale_en-hk.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/angular/i18n/angular-locale_uk.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/angular/i18n/angular-locale_zh-cn.js" charset="GBK" />
   </component>
 </project>
