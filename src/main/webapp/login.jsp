@@ -9,6 +9,24 @@
 <html>
 <head>
     <title></title>
+  <script type="text/javascript" src="/js/jquery/jquery.min.js"></script>
+  <script type="text/javascript">
+    function login() {
+      $.ajax({
+        type:'post',
+        url: 'userController/login',
+        dataType: 'json',
+        data: {username:$('#username').val(),password:$('#password').val()},
+        success: function(data) {
+          if(data.result == "success") {
+            alert("login success");
+          } else {
+            alert("login fail");
+          }
+        }
+      });
+    }
+  </script>
 </head>
 <body>
   <h5>用户登录</h5>
@@ -16,7 +34,7 @@
     <tr>
       <td>用户名：</td>
       <td><input type="text" id="username"></td>
-      <td rowspan="2"><a href="">登录</a></td>
+      <td rowspan="2"><a href="" onclick="login();">登录</a></td>
     </tr>
     <tr>
       <td>密码：</td>
