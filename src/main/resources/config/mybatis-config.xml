@@ -9,6 +9,6 @@
         <setting name="logImpl" value="LOG4J"/>
     </settings>
     <mappers>
-        <!--<mapper resource="com/ehr/mybatis/mapper/IDemoDAO.xml" />-->
+        <mapper resource="com/liuwenjian/mappers/userMapper.xml" />
     </mappers>
 </configuration>

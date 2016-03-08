@@ -15,9 +15,9 @@ import java.util.Map;
  */
 public class JsonContentTypeView extends AbstractView {
 
-    static final Logger  logger = Logger.getLogger(JsonContentTypeView.class);
+    static final Logger logger = Logger.getLogger(JsonContentTypeView.class);
 
-    private String       jsonString;
+    private String jsonString;
 
     private List<Object> dataList;
 
