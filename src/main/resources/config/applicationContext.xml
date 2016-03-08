@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:p="http://www.springframework.org/schema/p"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:aop="http://www.springframework.org/schema/aop"
        xmlns:tx="http://www.springframework.org/schema/tx"
-       xmlns:mvc="http://www.springframework.org/schema/mvc"
        xsi:schemaLocation="
-       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd;
-       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd;
-       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd;
-       http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd;
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
 
     <!-- 自动扫描 -->
-    <context:component-scan base-package="com.liuwenjian.service" />
-    <context:component-scan base-package="com.liuwenjian.dao" />
+    <!--<context:component-scan base-package="com.liuwenjian.service" />-->
+    <!--<context:component-scan base-package="com.liuwenjian.dao" />-->
 
     <!-- 引入文件属性 -->
     <!--<context:property-placeholder location="classpath:config/jdbc.properties" />-->
@@ -24,24 +21,24 @@
     </bean>
 
     <!-- sqlServer数据源-->
-    <bean id="sqlServerDataSource" class="org.apache.commons.dbcp.BasicDataSource"
-          destroy-method="close"
-        p:driverClassName="${jdbc.sqlserver.driver}"
-        p:url="${jdbc.sqlserver.url}"
-        p:username="${jdbc.sqlserver.username}"
-        p:password="${jdbc.sqlserver.password}"
-        p:initialSize="${jdbc.initialSize}"
-        p:minIdle="${jdbc.minIdle}"
-        p:maxIdle="${jdbc.maxIdle}"
-        p:maxActive="${jdbc.maxActive}"
-        p:maxWait="${jdbc.maxWait}"
-        p:defaultAutoCommit="${jdbc.defaultAutoCommit}"
-        p:removeAbandoned="${jdbc.removeAbandoned}"
-        p:removeAbandonedTimeout="${jdbc.removeAbandonedTimeout}"
-        p:testWhileIdle="${jdbc.testWhileIdle}"
-        p:timeBetweenEvictionRunsMillis="${jdbc.timeBetweenEvictionRunsMillis}"
-        p:numTestsPerEvictionRun="${jdbc.numTestsPerEvictionRun}"
-        p:minEvictableIdleTimeMillis="${jdbc.minEvictableIdleTimeMillis}"/>
+    <bean id="sqlServerDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.sqlserver.driver}"/>
+        <property name="url" value="${jdbc.sqlserver.url}"/>
+        <property name="username" value="${jdbc.sqlserver.username}"/>
+        <property name="password" value="${jdbc.sqlserver.password}"/>
+        <property name="initialSize" value="${jdbc.initialSize}"/>
+        <property name="minIdle" value="${jdbc.minIdle}"/>
+        <property name="maxIdle" value="${jdbc.maxIdle}"/>
+        <property name="maxActive" value="${jdbc.maxActive}"/>
+        <property name="maxWait" value="${jdbc.maxWait}"/>
+        <property name="defaultAutoCommit" value="${jdbc.defaultAutoCommit}"/>
+        <property name="removeAbandoned" value="${jdbc.removeAbandoned}"/>
+        <property name="removeAbandonedTimeout" value="${jdbc.removeAbandonedTimeout}"/>
+        <property name="testWhileIdle" value="${jdbc.testWhileIdle}"/>
+        <property name="timeBetweenEvictionRunsMillis" value="${jdbc.timeBetweenEvictionRunsMillis}"/>
+        <property name="numTestsPerEvictionRun" value="${jdbc.numTestsPerEvictionRun}"/>
+        <property name="minEvictableIdleTimeMillis" value="${jdbc.minEvictableIdleTimeMillis}"/>
+    </bean>
 
     <!-- mysql数据源-->
     <bean id="mySqlDataSource" class="org.apache.commons.dbcp.BasicDataSource"
@@ -78,7 +75,7 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="multipleDataSource" />
         <!-- 自动扫描mappers.xml文件 ，要加上classpath:com/...-->
-        <property name="mapperLocations" value="classpath:com/liuwenjian/mappers/*.xml"></property>
+        <!--<property name="mapperLocations" value="classpath:com/liuwenjian/mappers/*.xml"></property>-->
         <!-- mybatis配置文件 -->
         <property name="configLocation" value="classpath:config/mybatis-config.xml"></property>
     </bean>
@@ -92,7 +89,7 @@
     <!-- (事务管理)transaction manager, use JtaTransactionManager for global tx -->
     <bean id="transactionManager"
           class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="dataSource" />
+        <property name="dataSource" ref="mySqlDataSource" />
     </bean>
 
     <!-- 配置事务通知属性 -->
@@ -117,9 +114,9 @@
     </tx:advice>
 
     <!-- 配置事务切面 -->
-    <aop:config>
-        <aop:pointcut id="serviceOperation"
-                      expression="execution(* com.liuwenjian.service.*.*(..))" />
-        <aop:advisor advice-ref="txAdvice" pointcut-ref="serviceOperation" />
-    </aop:config>
+    <!--<aop:config>-->
+    <!--<aop:pointcut id="serviceOperation"-->
+    <!--expression="execution(* com.liuwenjian.service.*.*(..))" />-->
+    <!--<aop:advisor advice-ref="txAdvice" pointcut-ref="serviceOperation" />-->
+    <!--</aop:config>-->
 </beans>
