@@ -15,6 +15,7 @@ import java.util.Map;
  * Created by baozun on 2016/3/8.
  */
 @Controller
+@RequestMapping("/userController")
 public class UserController {
 
     @RequestMapping(value="/login")
@@ -35,6 +36,6 @@ public class UserController {
 
     @RequestMapping(value="/index")
     public String index(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        return "/login";
+        return "/login/login";
     }
 }
