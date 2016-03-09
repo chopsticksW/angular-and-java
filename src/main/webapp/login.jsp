@@ -9,23 +9,23 @@
 <html>
 <head>
     <title></title>
-  <script type="text/javascript" src="/js/jquery/jquery.min.js"></script>
-  <script type="text/javascript">
-    function login() {
-      $.ajax({
-        type:'post',
-        url: 'userController/login',
-        dataType: 'json',
-        data: {username:$('#username').val(),password:$('#password').val()},
-        success: function(data) {
-          if(data.result == "success") {
-            alert("login success");
-          } else {
-            alert("login fail");
+    <script type="text/javascript" src="/js/jquery/jquery.min.js"></script>
+    <script type="text/javascript">
+      function login() {
+        $.ajax({
+          type:'post',
+          url: 'userController/login',
+          dataType: 'json',
+          data: {username:$('#username').val(),password:$('#password').val()},
+          success: function(data) {
+            if(data.result == "success") {
+              alert("login success");
+            } else {
+              alert("login fail");
+            }
           }
-        }
-      });
-    }
+        });
+      }
   </script>
 </head>
 <body>
