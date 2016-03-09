@@ -34,9 +34,14 @@ public class UserController {
         return new ModelAndView(new JsonContentTypeView(gson.toJson(model)));
     }
 
+//    @RequestMapping(value="/index")
+//    public ModelAndView index(HttpServletRequest request, HttpServletResponse response) throws Exception {
+//
+//        return new ModelAndView("redirect:/login/login");
+//    }
     @RequestMapping(value="/index")
-    public ModelAndView index(HttpServletRequest request, HttpServletResponse response) throws Exception {
+    public String index(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
-        return new ModelAndView("redirect:/login/login");
+        return "/login/login";
     }
 }

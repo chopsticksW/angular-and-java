@@ -18,7 +18,7 @@
 </script>
 <body>
 <%
-    response.sendRedirect("/userController?m=index");
+    response.sendRedirect(basePath+"userController/index");
 %>
 </body>
 </html>

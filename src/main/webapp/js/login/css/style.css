@@ -178,8 +178,8 @@ button:active {
     -ms-transition: all .2s;
 }
 
-.connect a.facebook { background: url(../../images/login/facebook.png) center center no-repeat; }
-.connect a.twitter { background: url(../../images/login/twitter.png) center center no-repeat; }
+.connect a.facebook { background: url(../images/facebook.png) center center no-repeat; }
+.connect a.twitter { background: url(../images/twitter.png) center center no-repeat; }
 
 .connect a:hover { background-position: center bottom; }
 

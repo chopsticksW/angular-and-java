@@ -11,13 +11,13 @@
     <meta name="author" content="">
     <#assign basePath=request.contextPath>
     <!-- CSS -->
-    <link rel="stylesheet" href="${basePath}/css/login/reset.css">
-    <link rel="stylesheet" href="${basePath}/css/login/supersized.css">
-    <link rel="stylesheet" href="${basePath}/css/login/style.css">
+    <link rel="stylesheet" href="${basePath}/js/login/css/reset.css">
+    <link rel="stylesheet" href="${basePath}/js/login/css/supersized.css">
+    <link rel="stylesheet" href="${basePath}/js/login/css/style.css">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="${basePath}/js/html5.js"></script>
     <![endif]-->
 
 </head>
@@ -44,9 +44,9 @@
 
 <!-- Javascript -->
 <script src="${basePath}/js/jquery/jquery.min.js"></script>
-<script src="${basePath}/js/login/supersized.3.2.7.min.js"></script>
-<script src="${basePath}/js/login/supersized-init.js"></script>
-<script src="${basePath}/js/login/scripts.js"></script>
+<script src="${basePath}/js/login/js/supersized.3.2.7.min.js"></script>
+<script src="${basePath}/js/login/js/supersized-init.js"></script>
+<script src="${basePath}/js/login/js/scripts.js"></script>
 
 </body>
 

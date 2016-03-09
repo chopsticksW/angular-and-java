@@ -1,5 +1,9 @@
 jQuery(function($){
 
+    var local = window.location;
+    var contextPath = local.pathname.split("/")[1];
+    var basePath = local.protocol+"//"+local.host+"/"+contextPath;
+
     $.supersized({
 
         // Functionality
@@ -20,9 +24,9 @@ jQuery(function($){
         // Components
         slide_links        : 'blank',    // Individual links for each slide (Options: false, 'num', 'name', 'blank')
         slides             : [    // Slideshow Images
-                                 {image : 'assets/img/backgrounds/1.jpg'},
-                                 {image : 'assets/img/backgrounds/2.jpg'},
-                                 {image : 'assets/img/backgrounds/3.jpg'}
+                                 {image : basePath+'/js/login/images/backgrounds/1.jpg'},
+                                 {image : basePath+'/js/login/images/backgrounds/2.jpg'},
+                                 {image : basePath+'/js/login/images/backgrounds/3.jpg'}
                              ]
 
     });
