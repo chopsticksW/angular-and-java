@@ -18,7 +18,7 @@
 </script>
 <body>
 <%
-    response.sendRedirect("/userController/index");
+    response.sendRedirect("/userController?m=index");
 %>
 </body>
 </html>

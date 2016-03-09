@@ -35,7 +35,8 @@ public class UserController {
     }
 
     @RequestMapping(value="/index")
-    public String index(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        return "/login/login";
+    public ModelAndView index(HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+        return new ModelAndView("redirect:/login/login");
     }
 }
