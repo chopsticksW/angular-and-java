@@ -18,6 +18,12 @@ import java.util.Map;
 @RequestMapping("/userController")
 public class UserController {
 
+    @RequestMapping(value="/index")
+    public String index(HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+        return "/login/login";
+    }
+
     @RequestMapping(value="/login")
     public ModelAndView login(HttpServletRequest request, HttpServletResponse response) throws Exception {
         Map<String, Object> model = new HashMap<String, Object>();
@@ -32,16 +38,5 @@ public class UserController {
         }
         model.put("result","success");
         return new ModelAndView(new JsonContentTypeView(gson.toJson(model)));
-    }
-
-//    @RequestMapping(value="/index")
-//    public ModelAndView index(HttpServletRequest request, HttpServletResponse response) throws Exception {
-//
-//        return new ModelAndView("redirect:/login/login");
-//    }
-    @RequestMapping(value="/index")
-    public String index(HttpServletRequest request, HttpServletResponse response) throws Exception {
-
-        return "/login/login";
     }
 }
