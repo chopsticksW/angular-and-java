@@ -17,19 +17,24 @@ import java.util.Map;
 @Controller
 public class UserController {
 
-//    @RequestMapping(value="/login")
-//    public ModelAndView login(HttpServletRequest request, HttpServletResponse response) throws Exception {
-//        Map<String, Object> model = new HashMap<String, Object>();
-//        Gson gson = new Gson();
-//        String username = request.getParameter("username");
-//        String password = request.getParameter("password");
-//        if(!"root".equals(username)) {
-//            model.put("result","fail");
-//        }
-//        if(!"root".equals(password)) {
-//            model.put("result","fail");
-//        }
-//        model.put("result","success");
-//        return new ModelAndView(new JsonContentTypeView(gson.toJson(model)));
-//    }
+    @RequestMapping(value="/login")
+    public ModelAndView login(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        Map<String, Object> model = new HashMap<String, Object>();
+        Gson gson = new Gson();
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+        if(!"root".equals(username)) {
+            model.put("result","fail");
+        }
+        if(!"root".equals(password)) {
+            model.put("result","fail");
+        }
+        model.put("result","success");
+        return new ModelAndView(new JsonContentTypeView(gson.toJson(model)));
+    }
+
+    @RequestMapping(value="/index")
+    public String index(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        return "/login";
+    }
 }
