@@ -9,11 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <#assign basePath=request.contextPath>
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/login/reset.css">
-    <link rel="stylesheet" href="/css/login/supersized.css">
-    <link rel="stylesheet" href="/css/login/style.css">
+    <link rel="stylesheet" href="${basePath}/css/login/reset.css">
+    <link rel="stylesheet" href="${basePath}/css/login/supersized.css">
+    <link rel="stylesheet" href="${basePath}/css/login/style.css">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -43,10 +43,10 @@
 
 
 <!-- Javascript -->
-<script src="js/jquery/jquery.min.js"></script>
-<script src="js/login/supersized.3.2.7.min.js"></script>
-<script src="js/login/supersized-init.js"></script>
-<script src="js/login/scripts.js"></script>
+<script src="${basePath}/js/jquery/jquery.min.js"></script>
+<script src="${basePath}/js/login/supersized.3.2.7.min.js"></script>
+<script src="${basePath}/js/login/supersized-init.js"></script>
+<script src="${basePath}/js/login/scripts.js"></script>
 
 </body>
 
