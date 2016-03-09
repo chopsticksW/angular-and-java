@@ -5,7 +5,7 @@
 <head>
 
     <meta charset="utf-8">
-    <title>Fullscreen Login</title>
+    <title>用户登录</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -25,18 +25,18 @@
 <body>
 
 <div class="page-container">
-    <h1>Login</h1>
+    <h1>用户登录</h1>
     <form action="" method="post">
-        <input type="text" name="username" class="username" placeholder="Username">
-        <input type="password" name="password" class="password" placeholder="Password">
-        <button type="submit">Sign me in</button>
+        <input type="text" name="username" class="username" placeholder="用户名">
+        <input type="password" name="password" class="password" placeholder="密码">
+        <button type="submit">登录</button>
         <div class="error"><span>+</span></div>
     </form>
     <div class="connect">
         <p>Or connect with:</p>
         <p>
-            <a class="facebook" href=""></a>
-            <a class="twitter" href=""></a>
+            <a class="facebook" href="http://www.facebook.com"></a>
+            <a class="twitter" href="http://www.twitter.com"></a>
         </p>
     </div>
 </div>
