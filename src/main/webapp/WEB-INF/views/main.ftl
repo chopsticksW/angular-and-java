@@ -384,7 +384,7 @@
                         <ul class="menu">
 
                             <li class="active">
-                                <a href="index.html">
+                                <a href="${basePath}/userController/main">
                                     <i class="fa fa-tachometer"></i> Dashboard
                                     <span class="badge badge-red">1</span>
                                 </a>
