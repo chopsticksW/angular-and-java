@@ -38,22 +38,10 @@
 
 <!-- Wrap all page content here -->
 <div id="wrap">
-
-
-
-
     <!-- Make page fluid -->
     <div class="row">
-
-
-
-
-
         <!-- Fixed navbar -->
         <div class="navbar navbar-default navbar-fixed-top navbar-transparent-black mm-fixed-top" role="navigation" id="navbar">
-
-
-
             <!-- Branding -->
             <div class="navbar-header col-md-2">
                 <a class="navbar-brand" href="index.html">
