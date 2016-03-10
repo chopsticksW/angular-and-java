@@ -24,6 +24,12 @@ public class UserController {
         return "/login/login";
     }
 
+    @RequestMapping(value="/main")
+    public String main(HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+        return "/main";
+    }
+
     @RequestMapping(value="/login")
     public ModelAndView login(HttpServletRequest request, HttpServletResponse response) throws Exception {
         Map<String, Object> model = new HashMap<String, Object>();
