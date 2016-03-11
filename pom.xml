@@ -236,6 +236,13 @@
         <artifactId>gson</artifactId>
         <version>2.2.2</version>
       </dependency>
+
+      <!-- urlrewrite伪静态-->
+      <dependency>
+        <groupId>org.tuckey</groupId>
+        <artifactId>urlrewritefilter</artifactId>
+        <version>4.0.3</version>
+      </dependency>
     </dependencies>
   <build>
     <finalName>angular-demo</finalName>
