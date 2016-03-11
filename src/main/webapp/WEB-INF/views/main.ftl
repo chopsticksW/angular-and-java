@@ -30,6 +30,7 @@
     <script src="${basePath}/js/minimal/assets/js/html5shiv.js"></script>
     <script src="${basePath}/js/minimal/assets/js/respond.min.js"></script>
     <![endif]-->
+    <base href="/">
 </head>
 <body class="bg-1" ng-app="mainApp" ng-controller="myProjectListCtrl">
 <!-- Preloader -->
@@ -1036,6 +1037,9 @@
 <script src="${basePath}/js/angular/angular-route.js"></script>
 <script src="${basePath}/js/angular/angular-animate.js"></script>
 <script src="${basePath}/js/angular-ui/angular-ui-router.js"></script>
+<script src="${basePath}/js/src/minimal/main.js"></script>
+<script src="${basePath}/js/src/minimal/controller/MyProjectList.js"></script>
+<script src="${basePath}/js/src/minimal/controller/MainController.js"></script>
 
 <script>
     $(function(){
