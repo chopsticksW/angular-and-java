@@ -7,7 +7,7 @@ mainApp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', fun
 
     //$urlRouterProvider.when('/main', '/main');
     $stateProvider
-        .state('main', {
+        .state('home', {
             url: '/main',
             template: 'template/minimal/index.html',
             controller: 'mainCtrl'
