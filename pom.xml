@@ -248,41 +248,30 @@
     <finalName>angular-demo</finalName>
     <plugins>
       <plugin>
-        <groupId>org.mortbay.jetty</groupId>
-        <artifactId>maven-jetty-plugin</artifactId>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-maven-plugin</artifactId>
+        <version>9.3.7.v20160115</version>
         <configuration>
+          <scanIntervalSeconds>10</scanIntervalSeconds>
+          <reload>automatic</reload>
           <stopPort>9966</stopPort>
           <stopKey>foo</stopKey>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.mortbay.jetty</groupId>
-        <artifactId>maven-jetty-plugin</artifactId>
-        <version>6.1.22</version>
-        <configuration>
-          <contextPath>/</contextPath>
-          <scanIntervalSeconds>0</scanIntervalSeconds>
-          <reload>automatic</reload>
-          <connectors>
-            <connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
-              <port>8080</port>
-              <maxIdleTime>60000</maxIdleTime>
-            </connector>
-          </connectors>
-
-          <requestLog implementation="org.mortbay.jetty.NCSARequestLog">
-            <filename>target/access.log</filename>
+          <stopWait>10</stopWait>
+          <webApp>
+            <contextPath>/</contextPath>
+          </webApp>
+          <httpConnector>
+            <port>9080</port>
+            <idleTimeout>60000</idleTimeout>
+          </httpConnector>
+          <requestLog implementation="org.eclipse.jetty.server.NCSARequestLog">
+            <filename>target/yyyy_mm_dd.request.log</filename>
+            <!--<filenameDateformat>yyyy_MM_dd</filenameDateformat>-->
             <retainDays>90</retainDays>
-            <append>false</append>
+            <append>true</append>
             <extended>false</extended>
             <logTimeZone>GMT+8:00</logTimeZone>
           </requestLog>
-          <systemProperties>
-            <systemProperty>
-              <name>org.mortbay.jetty.webapp.parentLoaderPriority</name>
-              <value>true</value>
-            </systemProperty>
-          </systemProperties>
         </configuration>
       </plugin>
     </plugins>

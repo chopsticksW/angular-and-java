@@ -24,9 +24,9 @@ jQuery(function($){
         // Components
         slide_links        : 'blank',    // Individual links for each slide (Options: false, 'num', 'name', 'blank')
         slides             : [    // Slideshow Images
-                                 {image : basePath+'/js/login/images/backgrounds/1.jpg'},
-                                 {image : basePath+'/js/login/images/backgrounds/2.jpg'},
-                                 {image : basePath+'/js/login/images/backgrounds/3.jpg'}
+                                 {image : '/js/login/images/backgrounds/1.jpg'},
+                                 {image : '/js/login/images/backgrounds/2.jpg'},
+                                 {image : '/js/login/images/backgrounds/3.jpg'}
                              ]
 
     });
