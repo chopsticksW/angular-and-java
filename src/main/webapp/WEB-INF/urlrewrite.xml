@@ -5,6 +5,11 @@
         "http://www.tuckey.org/res/dtds/urlrewrite4.0.dtd">
 
 <urlrewrite>
+
+    <rule>
+        <from>^/index$</from>
+        <to>/userController/index</to>
+    </rule>
     <rule>
         <from>^/main$</from>
         <to>/userController/main</to>
