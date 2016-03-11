@@ -3,7 +3,7 @@
  */
 'use strict'
 var mainApp = angular.module("mainApp");
-mainApp.controller('mainController', ['$scope', function($scope) {
+mainApp.controller('mainCtrl', ['$scope', function($scope) {
 
     console.log(11);
 }]);

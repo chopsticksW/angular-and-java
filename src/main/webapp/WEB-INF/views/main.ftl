@@ -31,7 +31,7 @@
     <script src="${basePath}/js/minimal/assets/js/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="bg-1">
+<body class="bg-1" ng-app="mainApp" ng-controller="myProjectListCtrl">
 <!-- Preloader -->
 <div class="mask"><div id="loader"></div></div>
 <!--/Preloader -->
@@ -597,7 +597,7 @@
         </div>
         <!-- Fixed navbar end -->
 
-        <ui-view id="content"></ui-view>
+        <ui-view></ui-view>
 
         <div id="mmenu" class="right-panel">
             <!-- Nav tabs -->

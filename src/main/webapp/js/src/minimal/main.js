@@ -10,7 +10,7 @@ mainApp.config(['$stateProvider', '$urlRouteProvider', '$locationProvider', func
         .state('main', {
             url: '/main',
             template: 'template/minimal/index.html',
-            controller: 'mainController'
+            controller: 'mainCtrl'
         });
 
     if(window.history && history.pushState) {
