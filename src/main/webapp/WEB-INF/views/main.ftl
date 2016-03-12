@@ -597,9 +597,9 @@
             <!--/.nav-collapse -->
         </div>
         <!-- Fixed navbar end -->
-
-        <ui-view></ui-view>
-
+        <!-- Page content -->
+        <div id="content" class="col-md-12" ui-view></div>
+        <!--page content end-->
         <div id="mmenu" class="right-panel">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs nav-justified">
