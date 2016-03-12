@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Minimal 1.0 - Dashboard</title>
+    <title>AngularJS+SpringMVC+MAVEN+Mybatis学习项目</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8" />
     <#assign basePath=request.contextPath>
