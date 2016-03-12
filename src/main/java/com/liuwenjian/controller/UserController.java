@@ -18,13 +18,13 @@ import java.util.Map;
 @RequestMapping("/userController")
 public class UserController {
 
-    @RequestMapping(value="/index.htm")
+    @RequestMapping(value="/index")
     public String index(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
         return "/login/login";
     }
 
-    @RequestMapping(value="/main.htm")
+    @RequestMapping(value="/main")
     public String main(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
         return "/main";

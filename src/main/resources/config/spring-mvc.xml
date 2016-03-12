@@ -73,14 +73,4 @@
         <property name="exposeRequestAttributes" value="true" />
         <property name="exposeSessionAttributes" value="true" />
     </bean>
-
-    <!-- 根据不同参数名执行不同的方法url?m=?-->
-    <bean id="paraMethodResolver" class="org.springframework.web.servlet.mvc.multiaction.ParameterMethodNameResolver">
-        <property name="paramName">
-            <value>m</value>
-        </property>
-        <property name="defaultMethodName">
-            <value>list</value>
-        </property>
-    </bean>
 </beans>  

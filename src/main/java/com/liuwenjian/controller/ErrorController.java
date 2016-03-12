@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping(path="/errorController")
 public class ErrorController {
 
-    @RequestMapping(value="404.htm")
+    @RequestMapping(value="404")
     public String page404() {
 
         return "error/page404";
     }
 
-    @RequestMapping(path="500.htm")
+    @RequestMapping(path="500")
     public String page500() {
 
         return "error/page500";
