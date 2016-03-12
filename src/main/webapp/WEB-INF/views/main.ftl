@@ -1040,6 +1040,7 @@
 <script src="js/src/minimal/main.js"></script>
 <script src="js/src/minimal/controller/MyProjectList.js"></script>
 <script src="js/src/minimal/controller/MainController.js"></script>
+<script src="js/src/minimal/service/UserService.js"></script>
 </body>
 </html>
       

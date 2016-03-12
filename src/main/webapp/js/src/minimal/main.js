@@ -2,7 +2,7 @@
  * Created by baozun on 2016/3/11.
  */
 'use strict'
-var mainApp = angular.module("mainApp", ['ngAnimate', 'ui.router']);
+var mainApp = angular.module("mainApp", ['ngAnimate', 'ui.router', 'userFactoryCtrl']);
 mainApp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
 
     //$urlRouterProvider.when('/', '/index');
