@@ -5,12 +5,17 @@
 var mainApp = angular.module("mainApp", ['ngAnimate', 'ui.router']);
 mainApp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
 
-    //$urlRouterProvider.when('/main', '/main');
+    //$urlRouterProvider.when('/', '/index');
     $stateProvider
         .state('home', {
-            url: '/main',
+            url: '/home',
             templateUrl: 'template/minimal/index.html',
             controller: 'mainCtrl'
+        })
+        .state('userList', {
+            url: '/userList',
+            templateUrl: 'template/minimal/userList.html',
+            controller: 'userListCtrl'
         });
 
     if(window.history && history.pushState) {

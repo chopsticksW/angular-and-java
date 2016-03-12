@@ -15,22 +15,22 @@ import java.util.Map;
  * Created by baozun on 2016/3/8.
  */
 @Controller
-@RequestMapping("/userController")
+@RequestMapping(path="/user")
 public class UserController {
 
-    @RequestMapping(value="/index")
+    @RequestMapping(path="/index")
     public String index(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
         return "/login/login";
     }
 
-    @RequestMapping(value="/main")
+    @RequestMapping(path="/mainPage")
     public String main(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
         return "/main";
     }
 
-    @RequestMapping(value="/login.htm")
+    @RequestMapping(path="/login")
     public ModelAndView login(HttpServletRequest request, HttpServletResponse response) throws Exception {
         Map<String, Object> model = new HashMap<String, Object>();
         Gson gson = new Gson();

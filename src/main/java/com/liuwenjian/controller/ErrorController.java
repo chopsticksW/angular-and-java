@@ -7,16 +7,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * Created by halapro on 2016/3/12.
  */
 @Controller
-@RequestMapping(path="/errorController")
+@RequestMapping(path="/error")
 public class ErrorController {
 
-    @RequestMapping(value="404")
+    @RequestMapping(path="/404")
     public String page404() {
 
         return "error/page404";
     }
 
-    @RequestMapping(path="500")
+    @RequestMapping(path="/500")
     public String page500() {
 
         return "error/page500";

@@ -18,15 +18,6 @@
         <version>4.12</version>
         <scope>test</scope>
       </dependency>
-      <!-- spring-->
-      <!--添加dependencyManagement和spring-framework-bom，其他spring dependency可以不加version-->
-      <!--<dependency>-->
-        <!--<groupId>org.springframework</groupId>-->
-        <!--<artifactId>spring-framework-bom</artifactId>-->
-        <!--<version>3.2.2.RELEASE</version>-->
-        <!--<type>pom</type>-->
-        <!--<scope>import</scope>-->
-      <!--</dependency>-->
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-aop</artifactId>
@@ -252,24 +243,32 @@
         <artifactId>jetty-maven-plugin</artifactId>
         <version>9.3.7.v20160115</version>
         <configuration>
+          <!-- 扫描秒数，若非0则为热部署-->
           <scanIntervalSeconds>10</scanIntervalSeconds>
           <reload>automatic</reload>
           <stopPort>9966</stopPort>
           <stopKey>foo</stopKey>
           <stopWait>10</stopWait>
           <webApp>
+            <!-- 项目根目录-->
             <contextPath>/</contextPath>
           </webApp>
           <httpConnector>
+            <!-- 服务器端口号-->
             <port>9080</port>
             <idleTimeout>60000</idleTimeout>
           </httpConnector>
+          <!-- 请求log-->
           <requestLog implementation="org.eclipse.jetty.server.NCSARequestLog">
+            <!-- log输出目录-->
             <filename>target/yyyy_mm_dd.request.log</filename>
             <!--<filenameDateformat>yyyy_MM_dd</filenameDateformat>-->
+            <!-- log保存天数-->
             <retainDays>90</retainDays>
+            <!-- log是否附加在文件后-->
             <append>true</append>
             <extended>false</extended>
+            <!-- 时区-->
             <logTimeZone>GMT+8:00</logTimeZone>
           </requestLog>
         </configuration>
