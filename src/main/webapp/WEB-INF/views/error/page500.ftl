@@ -4,14 +4,14 @@
     <title>Minimal 1.0 - Page 500</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8" />
-
-    <link rel="icon" type="image/ico" href="http://tattek.com/minimal/assets/images/favicon.ico" />
+    <#assign basePath=request.contextPath>
+    <link rel="icon" type="image/ico" href="http://tattek.com/minimal/${basePath}/js/minimal/assets/images/favicon.ico" />
     <!-- Bootstrap -->
-    <link href="assets/css/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="${basePath}/js/minimal/assets/css/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap-checkbox.css">
+    <link rel="stylesheet" href="${basePath}/js/minimal/assets/css/vendor/bootstrap-checkbox.css">
 
-    <link href="assets/css/minimal.css" rel="stylesheet">
+    <link href="${basePath}/js/minimal/assets/css/minimal.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,7 +40,7 @@
 
             <div class="inside-block">
 
-                <img src="assets/images/logo-big.png" alt class="logo">
+                <img src="${basePath}/js/minimal/assets/images/logo-big.png" alt class="logo">
 
                 <h1 class="error">Error <strong>500</strong></h1>
                 <p class="lead"><span class="overline">Whoops</span>, a real big error here!</p>
