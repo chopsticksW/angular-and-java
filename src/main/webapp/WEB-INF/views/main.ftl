@@ -5,30 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8" />
     <#assign basePath=request.contextPath>
-    <link rel="icon" type="image/ico" href="http://tattek.com/minimal/${basePath}/js/minimal/assets/images/favicon.ico" />
+    <link rel="icon" type="image/ico" href="http://tattek.com/minimal/js/minimal/assets/images/favicon.ico" />
     <!-- Bootstrap -->
-    <link href="${basePath}/js/minimal/assets/css/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link href="${basePath}/js/minimal/assets/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="${basePath}/js/minimal/assets/css/vendor/animate/animate.min.css">
-    <link type="text/css" rel="stylesheet" media="all" href="${basePath}/js/minimal/assets/js/vendor/mmenu/css/jquery.mmenu.all.css" />
-    <link rel="stylesheet" href="${basePath}/js/minimal/assets/js/vendor/videobackground/css/jquery.videobackground.css">
-    <link rel="stylesheet" href="${basePath}/js/minimal/assets/css/vendor/bootstrap-checkbox.css">
+    <link href="js/minimal/assets/css/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="js/minimal/assets/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="js/minimal/assets/css/vendor/animate/animate.min.css">
+    <link type="text/css" rel="stylesheet" media="all" href="js/minimal/assets/js/vendor/mmenu/css/jquery.mmenu.all.css" />
+    <link rel="stylesheet" href="js/minimal/assets/js/vendor/videobackground/css/jquery.videobackground.css">
+    <link rel="stylesheet" href="js/minimal/assets/css/vendor/bootstrap-checkbox.css">
 
-    <link rel="stylesheet" href="${basePath}/js/minimal/assets/js/vendor/rickshaw/css/rickshaw.min.css">
-    <link rel="stylesheet" href="${basePath}/js/minimal/assets/js/vendor/morris/css/morris.css">
-    <link rel="stylesheet" href="${basePath}/js/minimal/assets/js/vendor/tabdrop/css/tabdrop.css">
-    <link rel="stylesheet" href="${basePath}/js/minimal/assets/js/vendor/summernote/css/summernote.css">
-    <link rel="stylesheet" href="${basePath}/js/minimal/assets/js/vendor/summernote/css/summernote-bs3.css">
-    <link rel="stylesheet" href="${basePath}/js/minimal/assets/js/vendor/chosen/css/chosen.min.css">
-    <link rel="stylesheet" href="${basePath}/js/minimal/assets/js/vendor/chosen/css/chosen-bootstrap.css">
+    <link rel="stylesheet" href="js/minimal/assets/js/vendor/rickshaw/css/rickshaw.min.css">
+    <link rel="stylesheet" href="js/minimal/assets/js/vendor/morris/css/morris.css">
+    <link rel="stylesheet" href="js/minimal/assets/js/vendor/tabdrop/css/tabdrop.css">
+    <link rel="stylesheet" href="js/minimal/assets/js/vendor/summernote/css/summernote.css">
+    <link rel="stylesheet" href="js/minimal/assets/js/vendor/summernote/css/summernote-bs3.css">
+    <link rel="stylesheet" href="js/minimal/assets/js/vendor/chosen/css/chosen.min.css">
+    <link rel="stylesheet" href="js/minimal/assets/js/vendor/chosen/css/chosen-bootstrap.css">
 
-    <link href="${basePath}/js/minimal/assets/css/minimal.css" rel="stylesheet">
+    <link href="js/minimal/assets/css/minimal.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="${basePath}/js/minimal/assets/js/html5shiv.js"></script>
-    <script src="${basePath}/js/minimal/assets/js/respond.min.js"></script>
+    <script src="js/minimal/assets/js/html5shiv.js"></script>
+    <script src="js/minimal/assets/js/respond.min.js"></script>
     <![endif]-->
     <base href="/">
 </head>
@@ -168,7 +168,7 @@
                             <li>
                                 <a class="cyan" href="#">
                                     <div class="profile-photo">
-                                        <img src="${basePath}/js/minimal/assets/images/ici-avatar.jpg" alt />
+                                        <img src="js/minimal/assets/images/ici-avatar.jpg" alt />
                                     </div>
                                     <div class="message-info">
                                         <span class="sender">Ing. Imrich Kamarel</span>
@@ -181,7 +181,7 @@
                             <li>
                                 <a class="green" href="#">
                                     <div class="profile-photo">
-                                        <img src="${basePath}/js/minimal/assets/images/arnold-avatar.jpg" alt />
+                                        <img src="js/minimal/assets/images/arnold-avatar.jpg" alt />
                                     </div>
                                     <div class="message-info">
                                         <span class="sender">Arnold Karlsberg</span>
@@ -194,7 +194,7 @@
                             <li>
                                 <a href="#">
                                     <div class="profile-photo">
-                                        <img src="${basePath}/js/minimal/assets/images/profile-photo.jpg" alt />
+                                        <img src="js/minimal/assets/images/profile-photo.jpg" alt />
                                     </div>
                                     <div class="message-info">
                                         <span class="sender">John Douey</span>
@@ -207,7 +207,7 @@
                             <li>
                                 <a class="red" href="#">
                                     <div class="profile-photo">
-                                        <img src="${basePath}/js/minimal/assets/images/peter-avatar.jpg" alt />
+                                        <img src="js/minimal/assets/images/peter-avatar.jpg" alt />
                                     </div>
                                     <div class="message-info">
                                         <span class="sender">Peter Kay</span>
@@ -220,7 +220,7 @@
                             <li>
                                 <a class="orange" href="#">
                                     <div class="profile-photo">
-                                        <img src="${basePath}/js/minimal/assets/images/george-avatar.jpg" alt />
+                                        <img src="js/minimal/assets/images/george-avatar.jpg" alt />
                                     </div>
                                     <div class="message-info">
                                         <span class="sender">George McCain</span>
@@ -293,7 +293,7 @@
 
                     <li class="dropdown divided user" id="current-user">
                         <div class="profile-photo">
-                            <img src="${basePath}/js/minimal/assets/images/profile-photo.jpg" alt />
+                            <img src="js/minimal/assets/images/profile-photo.jpg" alt />
                         </div>
                         <a class="dropdown-toggle options" data-toggle="dropdown" href="#">
                             John Douey <i class="fa fa-caret-down"></i>
@@ -373,7 +373,7 @@
                         <ul class="menu">
 
                             <li class="active">
-                                <a href="${basePath}/userController/main">
+                                <a href="userController/main">
                                     <i class="fa fa-tachometer"></i> Dashboard
                                     <span class="badge badge-red">1</span>
                                 </a>
@@ -619,7 +619,7 @@
                         <li class="online">
                             <div class="media">
                                 <a class="pull-left profile-photo" href="#">
-                                    <img class="media-object" src="${basePath}/js/minimal/assets/images/ici-avatar.jpg" alt>
+                                    <img class="media-object" src="js/minimal/assets/images/ici-avatar.jpg" alt>
                                 </a>
                                 <div class="media-body">
                                     <h6 class="media-heading">Ing. Imrich <strong>Kamarel</strong></h6>
@@ -633,7 +633,7 @@
                             <div class="media">
 
                                 <a class="pull-left profile-photo" href="#">
-                                    <img class="media-object" src="${basePath}/js/minimal/assets/images/arnold-avatar.jpg" alt>
+                                    <img class="media-object" src="js/minimal/assets/images/arnold-avatar.jpg" alt>
                                 </a>
                                 <span class="badge badge-red unread">3</span>
 
@@ -649,7 +649,7 @@
                         <li class="online">
                             <div class="media">
                                 <a class="pull-left profile-photo" href="#">
-                                    <img class="media-object" src="${basePath}/js/minimal/assets/images/peter-avatar.jpg" alt>
+                                    <img class="media-object" src="js/minimal/assets/images/peter-avatar.jpg" alt>
 
                                 </a>
                                 <div class="media-body">
@@ -663,7 +663,7 @@
                         <li class="online">
                             <div class="media">
                                 <a class="pull-left profile-photo" href="#">
-                                    <img class="media-object" src="${basePath}/js/minimal/assets/images/george-avatar.jpg" alt>
+                                    <img class="media-object" src="js/minimal/assets/images/george-avatar.jpg" alt>
                                 </a>
                                 <div class="media-body">
                                     <h6 class="media-heading">George <strong>McCain</strong></h6>
@@ -676,7 +676,7 @@
                         <li class="busy">
                             <div class="media">
                                 <a class="pull-left profile-photo" href="#">
-                                    <img class="media-object" src="${basePath}/js/minimal/assets/images/random-avatar1.jpg" alt>
+                                    <img class="media-object" src="js/minimal/assets/images/random-avatar1.jpg" alt>
                                 </a>
                                 <div class="media-body">
                                     <h6 class="media-heading">Lucius <strong>Cashmere</strong></h6>
@@ -689,7 +689,7 @@
                         <li class="busy">
                             <div class="media">
                                 <a class="pull-left profile-photo" href="#">
-                                    <img class="media-object" src="${basePath}/js/minimal/assets/images/random-avatar2.jpg" alt>
+                                    <img class="media-object" src="js/minimal/assets/images/random-avatar2.jpg" alt>
                                 </a>
                                 <div class="media-body">
                                     <h6 class="media-heading">Jesse <strong>Phoenix</strong></h6>
@@ -708,7 +708,7 @@
                         <li class="offline">
                             <div class="media">
                                 <a class="pull-left profile-photo" href="#">
-                                    <img class="media-object" src="${basePath}/js/minimal/assets/images/random-avatar4.jpg" alt>
+                                    <img class="media-object" src="js/minimal/assets/images/random-avatar4.jpg" alt>
                                 </a>
                                 <div class="media-body">
                                     <h6 class="media-heading">Dell <strong>MacApple</strong></h6>
@@ -722,7 +722,7 @@
                             <div class="media">
 
                                 <a class="pull-left profile-photo" href="#">
-                                    <img class="media-object" src="${basePath}/js/minimal/assets/images/random-avatar5.jpg" alt>
+                                    <img class="media-object" src="js/minimal/assets/images/random-avatar5.jpg" alt>
                                 </a>
 
                                 <div class="media-body">
@@ -737,7 +737,7 @@
                         <li class="offline">
                             <div class="media">
                                 <a class="pull-left profile-photo" href="#">
-                                    <img class="media-object" src="${basePath}/js/minimal/assets/images/random-avatar6.jpg" alt>
+                                    <img class="media-object" src="js/minimal/assets/images/random-avatar6.jpg" alt>
 
                                 </a>
                                 <div class="media-body">
@@ -751,7 +751,7 @@
                         <li class="offline">
                             <div class="media">
                                 <a class="pull-left profile-photo" href="#">
-                                    <img class="media-object" src="${basePath}/js/minimal/assets/images/random-avatar7.jpg" alt>
+                                    <img class="media-object" src="js/minimal/assets/images/random-avatar7.jpg" alt>
                                 </a>
                                 <div class="media-body">
                                     <h6 class="media-heading">Bobby <strong>Socks</strong></h6>
@@ -764,7 +764,7 @@
                         <li class="offline">
                             <div class="media">
                                 <a class="pull-left profile-photo" href="#">
-                                    <img class="media-object" src="${basePath}/js/minimal/assets/images/random-avatar8.jpg" alt>
+                                    <img class="media-object" src="js/minimal/assets/images/random-avatar8.jpg" alt>
                                 </a>
                                 <div class="media-body">
                                     <h6 class="media-heading">Anna <strong>Opichia</strong></h6>
@@ -786,7 +786,7 @@
                         <li class="online">
                             <div class="media">
                                 <a class="pull-left profile-photo" href="#">
-                                    <img class="media-object" src="${basePath}/js/minimal/assets/images/ici-avatar.jpg" alt>
+                                    <img class="media-object" src="js/minimal/assets/images/ici-avatar.jpg" alt>
                                 </a>
                                 <div class="media-body">
                                     <h6 class="media-heading">Ing. Imrich <strong>Kamarel</strong></h6>
@@ -800,7 +800,7 @@
                             <div class="media">
 
                                 <a class="pull-left profile-photo" href="#">
-                                    <img class="media-object" src="${basePath}/js/minimal/assets/images/arnold-avatar.jpg" alt>
+                                    <img class="media-object" src="js/minimal/assets/images/arnold-avatar.jpg" alt>
                                 </a>
                                 <span class="badge badge-red unread">3</span>
 
@@ -816,7 +816,7 @@
                         <li class="offline">
                             <div class="media">
                                 <a class="pull-left profile-photo" href="#">
-                                    <img class="media-object" src="${basePath}/js/minimal/assets/images/peter-avatar.jpg" alt>
+                                    <img class="media-object" src="js/minimal/assets/images/peter-avatar.jpg" alt>
 
                                 </a>
                                 <div class="media-body">
@@ -839,7 +839,7 @@
                             <div class="media">
 
                                 <a class="pull-left profile-photo" href="#">
-                                    <img class="media-object" src="${basePath}/js/minimal/assets/images/arnold-avatar.jpg" alt>
+                                    <img class="media-object" src="js/minimal/assets/images/arnold-avatar.jpg" alt>
                                 </a>
                                 <span class="badge badge-red unread">3</span>
 
@@ -855,7 +855,7 @@
                         <li class="offline">
                             <div class="media">
                                 <a class="pull-left profile-photo" href="#">
-                                    <img class="media-object" src="${basePath}/js/minimal/assets/images/random-avatar8.jpg" alt>
+                                    <img class="media-object" src="js/minimal/assets/images/random-avatar8.jpg" alt>
                                 </a>
                                 <div class="media-body">
                                     <h6 class="media-heading">Anna <strong>Opichia</strong></h6>
@@ -868,7 +868,7 @@
                         <li class="busy">
                             <div class="media">
                                 <a class="pull-left profile-photo" href="#">
-                                    <img class="media-object" src="${basePath}/js/minimal/assets/images/random-avatar1.jpg" alt>
+                                    <img class="media-object" src="js/minimal/assets/images/random-avatar1.jpg" alt>
                                 </a>
                                 <div class="media-body">
                                     <h6 class="media-heading">Lucius <strong>Cashmere</strong></h6>
@@ -881,7 +881,7 @@
                         <li class="online">
                             <div class="media">
                                 <a class="pull-left profile-photo" href="#">
-                                    <img class="media-object" src="${basePath}/js/minimal/assets/images/ici-avatar.jpg" alt>
+                                    <img class="media-object" src="js/minimal/assets/images/ici-avatar.jpg" alt>
                                 </a>
                                 <div class="media-body">
                                     <h6 class="media-heading">Ing. Imrich <strong>Kamarel</strong></h6>
@@ -1002,44 +1002,44 @@
 <section class="videocontent" id="video"></section>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script type="text/javascript" src="${basePath}/js/minimal/assets/js/jquery.js"></script>
+<script type="text/javascript" src="js/minimal/assets/js/jquery.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script type="text/javascript" src="${basePath}/js/minimal/assets/js/vendor/bootstrap/bootstrap.min.js"></script>
-<script type="text/javascript" src="${basePath}/js/minimal/assets/js/vendor/mmenu/js/jquery.mmenu.min.js"></script>
-<script type="text/javascript" src="${basePath}/js/minimal/assets/js/vendor/sparkline/jquery.sparkline.min.js"></script>
-<script type="text/javascript" src="${basePath}/js/minimal/assets/js/vendor/nicescroll/jquery.nicescroll.min.js"></script>
-<script type="text/javascript" src="${basePath}/js/minimal/assets/js/vendor/animate-numbers/jquery.animateNumbers.js"></script>
-<script type="text/javascript" src="${basePath}/js/minimal/assets/js/vendor/videobackground/jquery.videobackground.js"></script>
-<script type="text/javascript" src="${basePath}/js/minimal/assets/js/vendor/blockui/jquery.blockUI.js"></script>
+<script type="text/javascript" src="js/minimal/assets/js/vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/minimal/assets/js/vendor/mmenu/js/jquery.mmenu.min.js"></script>
+<script type="text/javascript" src="js/minimal/assets/js/vendor/sparkline/jquery.sparkline.min.js"></script>
+<script type="text/javascript" src="js/minimal/assets/js/vendor/nicescroll/jquery.nicescroll.min.js"></script>
+<script type="text/javascript" src="js/minimal/assets/js/vendor/animate-numbers/jquery.animateNumbers.js"></script>
+<script type="text/javascript" src="js/minimal/assets/js/vendor/videobackground/jquery.videobackground.js"></script>
+<script type="text/javascript" src="js/minimal/assets/js/vendor/blockui/jquery.blockUI.js"></script>
 
-<script src="${basePath}/js/minimal/assets/js/vendor/flot/jquery.flot.min.js"></script>
-<script src="${basePath}/js/minimal/assets/js/vendor/flot/jquery.flot.time.min.js"></script>
-<script src="${basePath}/js/minimal/assets/js/vendor/flot/jquery.flot.selection.min.js"></script>
-<script src="${basePath}/js/minimal/assets/js/vendor/flot/jquery.flot.animator.min.js"></script>
-<script src="${basePath}/js/minimal/assets/js/vendor/flot/jquery.flot.orderBars.js"></script>
-<script src="${basePath}/js/minimal/assets/js/vendor/easypiechart/jquery.easypiechart.min.js"></script>
+<script src="js/minimal/assets/js/vendor/flot/jquery.flot.min.js"></script>
+<script src="js/minimal/assets/js/vendor/flot/jquery.flot.time.min.js"></script>
+<script src="js/minimal/assets/js/vendor/flot/jquery.flot.selection.min.js"></script>
+<script src="js/minimal/assets/js/vendor/flot/jquery.flot.animator.min.js"></script>
+<script src="js/minimal/assets/js/vendor/flot/jquery.flot.orderBars.js"></script>
+<script src="js/minimal/assets/js/vendor/easypiechart/jquery.easypiechart.min.js"></script>
 
-<script src="${basePath}/js/minimal/assets/js/vendor/rickshaw/raphael-min.js"></script>
-<script src="${basePath}/js/minimal/assets/js/vendor/rickshaw/d3.v2.js"></script>
-<script src="${basePath}/js/minimal/assets/js/vendor/rickshaw/rickshaw.min.js"></script>
+<script src="js/minimal/assets/js/vendor/rickshaw/raphael-min.js"></script>
+<script src="js/minimal/assets/js/vendor/rickshaw/d3.v2.js"></script>
+<script src="js/minimal/assets/js/vendor/rickshaw/rickshaw.min.js"></script>
 
-<script src="${basePath}/js/minimal/assets/js/vendor/morris/morris.min.js"></script>
+<script src="js/minimal/assets/js/vendor/morris/morris.min.js"></script>
 
-<script src="${basePath}/js/minimal/assets/js/vendor/tabdrop/bootstrap-tabdrop.min.js"></script>
+<script src="js/minimal/assets/js/vendor/tabdrop/bootstrap-tabdrop.min.js"></script>
 
-<script src="${basePath}/js/minimal/assets/js/vendor/summernote/summernote.min.js"></script>
+<script src="js/minimal/assets/js/vendor/summernote/summernote.min.js"></script>
 
-<script src="${basePath}/js/minimal/assets/js/vendor/chosen/chosen.jquery.min.js"></script>
+<script src="js/minimal/assets/js/vendor/chosen/chosen.jquery.min.js"></script>
 
-<script src="${basePath}/js/minimal/assets/js/minimal.min.js"></script>
+<script src="js/minimal/assets/js/minimal.min.js"></script>
 <#--angularJS包引入-->
-<script src="${basePath}/js/angular/angular.js"></script>
-<script src="${basePath}/js/angular/angular-route.js"></script>
-<script src="${basePath}/js/angular/angular-animate.js"></script>
-<script src="${basePath}/js/angular-ui/angular-ui-router.js"></script>
-<script src="${basePath}/js/src/minimal/main.js"></script>
-<script src="${basePath}/js/src/minimal/controller/MyProjectList.js"></script>
-<script src="${basePath}/js/src/minimal/controller/MainController.js"></script>
+<script src="js/angular/angular.js"></script>
+<script src="js/angular/angular-route.js"></script>
+<script src="js/angular/angular-animate.js"></script>
+<script src="js/angular-ui/angular-ui-router.js"></script>
+<script src="js/src/minimal/main.js"></script>
+<script src="js/src/minimal/controller/MyProjectList.js"></script>
+<script src="js/src/minimal/controller/MainController.js"></script>
 
 <script>
     $(function(){

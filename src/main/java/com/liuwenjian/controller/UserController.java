@@ -18,19 +18,19 @@ import java.util.Map;
 @RequestMapping("/userController")
 public class UserController {
 
-    @RequestMapping(value="/index")
+    @RequestMapping(value="/index.htm")
     public String index(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
         return "/login/login";
     }
 
-    @RequestMapping(value="/main")
+    @RequestMapping(value="/main.htm")
     public String main(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
         return "/main";
     }
 
-    @RequestMapping(value="/login")
+    @RequestMapping(value="/login.htm")
     public ModelAndView login(HttpServletRequest request, HttpServletResponse response) throws Exception {
         Map<String, Object> model = new HashMap<String, Object>();
         Gson gson = new Gson();

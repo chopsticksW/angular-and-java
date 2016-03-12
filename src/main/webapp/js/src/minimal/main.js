@@ -9,7 +9,7 @@ mainApp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', fun
     $stateProvider
         .state('home', {
             url: '/main',
-            template: 'template/minimal/index.html',
+            templateUrl: 'template/minimal/index.html',
             controller: 'mainCtrl'
         });
 

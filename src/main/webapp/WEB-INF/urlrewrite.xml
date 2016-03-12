@@ -8,11 +8,11 @@
 
     <rule>
         <from>^/index$</from>
-        <to>/userController/index</to>
+        <to>/userController/index.htm</to>
     </rule>
     <rule>
         <from>^/main$</from>
-        <to>/userController/main</to>
+        <to>/userController/main.htm</to>
     </rule>
 
 </urlrewrite>
