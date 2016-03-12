@@ -15,7 +15,7 @@
         <to>/userController/index</to>
     </rule>
     <rule>
-        <from>^/home$</from>
+        <from>^/main</from>
         <to>/userController/main</to>
     </rule>
 
