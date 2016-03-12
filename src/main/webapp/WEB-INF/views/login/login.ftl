@@ -1,4 +1,4 @@
-<#import "/spring.ftl" as spring/>
+<#--<#import "/spring.ftl" as spring/>-->
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 
@@ -27,9 +27,9 @@
 <div class="page-container">
     <h1>用户登录</h1>
     <form action="" method="post">
-        <@spring.bind "command.name"/>
+        <#--<@spring.bind "command.name"/>-->
         <input type="text" name="username" class="username" placeholder="用户名" value="${spring.status.value?default("")}">
-        <#list spring.status.errorMessages as error> <b>${error}</b> <br> </#list>
+        <#--<#list spring.status.errorMessages as error> <b>${error}</b> <br> </#list>-->
         <input type="password" name="password" class="password" placeholder="密码">
         <button type="submit">登录</button>
         <div class="error"><span>+</span></div>
