@@ -19,12 +19,19 @@
     <mvc:resources mapping="/css/**" location="/css/" />
     <mvc:resources mapping="/images/**" location="/images/" />
 
-    <!-- 配置freeMarker的模板路径 -->
-    <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
-        <property name="templateLoaderPath">
-            <value>/WEB-INF/views/</value>
+    <!-- 文件上传配置注意:这里申明的id必须为multipartResolver -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="500000"/>
+    </bean>
+
+    <!-- 简单的异常处理 -->
+    <bean id="exceptionResolver" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <property name="exceptionMappings">
+            <props>
+                <!-- 映射目录为/WEB-INF/jsp/error/upload_error.jsp -->
+                <prop key="org.springframework.web.multipart.MaxUploadSizeExceededException">/error/upload_error</prop>
+            </props>
         </property>
-        <property name="freemarkerSettings" ref="freemarkerConfiguration"></property>
     </bean>
 
     <!-- freemarker配置资源文件引入-->
@@ -32,6 +39,21 @@
           class="org.springframework.beans.factory.config.PropertiesFactoryBean">
         <property name="location" value="classpath:config/freemarker.properties" />
     </bean>
+
+    <!-- 配置freeMarker的模板路径 -->
+    <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+        <property name="templateLoaderPath">
+            <value>/WEB-INF/views/</value>
+        </property>
+        <property name="freemarkerVariables">
+            <map>
+                <entry key="xml_escape" value-ref="fmXmlEscape"/>
+            </map>
+        </property>
+        <property name="freemarkerSettings" ref="freemarkerConfiguration"></property>
+    </bean>
+
+    <bean id="fmXmlEscape" class="freemarker.template.utility.XmlEscape"/>
 
     <!-- 针对freemarker的视图解析器配置 -->
     <bean id="viewResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
@@ -43,6 +65,7 @@
             </value>
         </property>
         <property name="contentType" value="text/html;charset=UTF-8"></property>
+        <!-- 在ftl页面中使用request.contextPath就可以获得contextPath-->
         <property name="requestContextAttribute" value="request" />
         <!-- 使用这些宏，必须设置FreeMarkerViewResolver的exposeMacroHelpers属性为true -->
         <property name="exposeSpringMacroHelpers" value="true" />
