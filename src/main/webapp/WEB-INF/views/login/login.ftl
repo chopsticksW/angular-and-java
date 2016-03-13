@@ -1,6 +1,6 @@
 <#--<#import "/spring.ftl" as spring/>-->
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en" class="no-js" ng-app="login">
 
 <head>
 
@@ -22,7 +22,7 @@
 
 </head>
 
-<body>
+<body ng-controller="loginCtrl">
 
 <div class="page-container">
     <h1>用户登录</h1>
@@ -31,7 +31,7 @@
         <input type="text" name="username" class="username" placeholder="用户名">
         <#--<#list spring.status.errorMessages as error> <b>${error}</b> <br> </#list>-->
         <input type="password" name="password" class="password" placeholder="密码">
-        <button type="submit">登录</button>
+        <button type="submit" ng-click="login();">登录</button>
         <div class="error"><span>+</span></div>
     </form>
     <div class="connect">
@@ -49,7 +49,24 @@
 <script src="js/login/js/supersized.3.2.7.min.js"></script>
 <script src="js/login/js/supersized-init.js"></script>
 <script src="js/login/js/scripts.js"></script>
-
+<script src="js/angular/angular.js"></script>
+<script type="text/javascript">
+    angular.module('login', [])
+            .controller('loginCtrl', ['$scope', '$http', function($scope, $http) {
+                $scope.login = function() {
+                    $http({
+                        method: 'post',
+                        url: '/user/login',
+                        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+                        data: {}
+                    }).success(function(data) {
+                        alert(data);
+                    }).error(function() {
+                        alert('login failed!');
+                    });
+                };
+            }]);
+</script>
 </body>
 
 </html>
