@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #angular-demo
 =======
 # angular-demo
