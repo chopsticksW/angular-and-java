@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/halaproliu/angular-demo/issues"
   },
-  "homepage": "https://github.com/halaproliu/angular-demo#readme"
+  "homepage": "https://github.com/halaproliu/angular-demo#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
