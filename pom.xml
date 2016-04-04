@@ -258,11 +258,11 @@
       </dependency>
 
       <!--ecache-->
-      <dependency>
-        <groupId>org.ehcache</groupId>
-        <artifactId>ehcache</artifactId>
-        <version>3.0.0.rc1</version>
-      </dependency>
+      <!--<dependency>-->
+        <!--<groupId>org.ehcache</groupId>-->
+        <!--<artifactId>ehcache</artifactId>-->
+        <!--<version>3.0.0.rc1</version>-->
+      <!--</dependency>-->
 
       <dependency>
         <groupId>net.sf.ezmorph</groupId>
@@ -279,8 +279,8 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>1.7</source>
-          <target>1.7</target>
+          <source>1.8</source>
+          <target>1.8</target>
         </configuration>
       </plugin>
       <!-- jetty插件，使用jetty:run启动-->

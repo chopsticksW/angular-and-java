@@ -94,9 +94,9 @@
     </bean>
 
     <!--ehcache配置-->
-    <bean id="ehCacheManager" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">
-        <property name="configLocation" value="classpath:config/ehcache.xml" />
-    </bean>
+    <!--<bean id="ehCacheManager" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">-->
+        <!--<property name="configLocation" value="classpath:config/ehcache.xml" />-->
+    <!--</bean>-->
 
     <!-- 配置事务通知属性 -->
     <tx:advice id="txAdvice" transaction-manager="transactionManager">
